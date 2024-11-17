@@ -1,8 +1,8 @@
-SRCS			:=	srcs/main.cpp
+SRCS			:=	srcs/main.cpp	srcs/Board/Board.cpp
 OBJS			:=	$(SRCS:.cpp=.o)
 
-HEADERS_SRCS	:= GameManager.hpp
-HEADERS			:=	-I headers/$(HEADERS_SRCS)
+HEADERS_SRCS	:= srcs/Board.hpp
+HEADERS			:=	-I $(HEADERS_SRCS)
 NAME			:=	chess
 
 CXX				:=	g++
